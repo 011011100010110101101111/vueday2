@@ -36,8 +36,5 @@ export default {
   }
 }
 </script>
-<style scoped>
-#tip{
-
-}
+<style>
 </style>
