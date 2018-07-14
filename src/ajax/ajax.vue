@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   data () {
     return {
@@ -16,7 +16,10 @@ export default {
   },
   methods: {
     aj () {
-      axios.get('http://rttop.cn/api/?day=1-1').then(res => {
+    //   axios.get('http://rttop.cn/api/?day=1-1').then(res => {
+    //     this.msg = res.data
+    //   })
+      this.$http('http://rttop.cn/api/?day=1-1').then(res => {
         this.msg = res.data
       })
     },
