@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Navi from '@/navi/index.vue'
 import det from '@/navi/det.vue'
 import ajax from '@/ajax/ajax.vue'
+import echarts from '@/echarts/echarts.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/ajax',
       name: 'ajax',
       component: ajax
+    },
+    {
+      path: '/echarts',
+      name: 'echarts',
+      component: echarts
     }
   ]
 })
