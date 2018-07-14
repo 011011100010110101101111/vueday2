@@ -2,6 +2,7 @@
     <div>
         <el-row class="tac">
             <el-col :span="5">
+                <h3>vue听课笔记整理</h3>
                 <el-menu
                 default-active="2"
                 class="el-menu-vertical-demo"
@@ -18,26 +19,47 @@
                             <el-menu-item index="1-2">前端框架</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="环境准备">
-                            <el-menu-item index="1-3">选项3</el-menu-item>
+                            <el-menu-item index="1-3">VUECli安装</el-menu-item>
+                            <el-menu-item index="1-4">webpack安装</el-menu-item>
+                            <el-menu-item index="1-5">新建项目</el-menu-item>
                         </el-menu-item-group>
-                        <el-submenu index="1-4">
-                        <template slot="title">选项4</template>
-                        <el-menu-item index="1-4-1">选项1</el-menu-item>
-                    </el-submenu>
                 </el-submenu>
                 <el-menu-item index="2">
                     <i class="el-icon-menu"></i>
-                    <span slot="title">导航二</span>
+                    <span slot="title">vue基础语法</span>
                 </el-menu-item>
-                <el-menu-item index="3" disabled>
+                <el-menu-item index="3">
                     <i class="el-icon-document"></i>
-                    <span slot="title">导航三</span>
+                    <span slot="title">双向绑定与过滤器</span>
                 </el-menu-item>
                 <el-menu-item index="4">
                     <i class="el-icon-setting"></i>
-                    <span slot="title">导航四</span>
+                    <span slot="title">组件化</span>
+                </el-menu-item>
+                <el-menu-item index="5">
+                    <i class="el-icon-setting"></i>
+                    <span slot="title">api接口请求</span>
+                </el-menu-item>
+                <el-menu-item index="6">
+                    <i class="el-icon-setting"></i>
+                    <span slot="title">echarts在vue中的应用</span>
+                </el-menu-item>
+                <el-menu-item index="7">
+                    <i class="el-icon-setting"></i>
+                    <span slot="title">elementUI组件库的应用</span>
+                </el-menu-item>
+                <el-menu-item index="8">
+                    <i class="el-icon-setting"></i>
+                    <span slot="title">iviewUI组件库的应用</span>
+                </el-menu-item>
+                <el-menu-item index="9">
+                    <i class="el-icon-setting"></i>
+                    <span slot="title">VUX</span>
                 </el-menu-item>
                 </el-menu>
+            </el-col>
+            <el-col :span='13'>
+                <router-view style="margin-top : 80px;"/>
             </el-col>
         </el-row>
     </div>

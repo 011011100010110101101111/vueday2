@@ -11,12 +11,12 @@
 
 ## 笔记查看
 
-- 可以直接在github 上查看源代码以及其中的注释
+- 可以直接在 ```github``` 上查看源代码以及其中的注释
 - **推荐** ,将代码clone 到本地，运行起来以后，在浏览器直接查看笔记以及代码：
 
 1. 首先克隆代码
 ``` bash
-https://github.com/gitors/vueday2.git
+git clone https://github.com/gitors/vueday2.git
 ```
 2. 依赖安装
 

@@ -6,13 +6,16 @@ import det from '@/navi/det.vue'
 import ajax from '@/ajax/ajax.vue'
 import echarts from '@/echarts/echarts.vue'
 import element from '@/elementUi/index.vue'
+import future from '@/note/future.vue'
+import in1 from '@/exam/in.vue'
+import in2 from '@/exam/in2.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
     },
@@ -32,14 +35,31 @@ export default new Router({
       component: ajax
     },
     {
-      path: '/echarts',
-      name: 'echarts',
-      component: echarts
-    },
-    {
-      path: '/element',
-      name: 'element',
-      component: element
+      path: '/',
+      name: 'index',
+      component: element,
+      children: [
+        {
+          path: '/echarts',
+          name: 'echarts',
+          component: echarts
+        },
+        {
+          path: '/future',
+          name: 'future',
+          component: future
+        },
+        {
+          path: '/in',
+          name: 'in',
+          component: in1
+        },
+        {
+          path: '/in2',
+          name: 'in2',
+          component: in2
+        }
+      ]
     }
   ]
 })
