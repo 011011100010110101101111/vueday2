@@ -5,6 +5,7 @@ import Navi from '@/navi/index.vue'
 import det from '@/navi/det.vue'
 import ajax from '@/ajax/ajax.vue'
 import echarts from '@/echarts/echarts.vue'
+import element from '@/elementUi/index.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/echarts',
       name: 'echarts',
       component: echarts
+    },
+    {
+      path: '/element',
+      name: 'element',
+      component: element
     }
   ]
 })
