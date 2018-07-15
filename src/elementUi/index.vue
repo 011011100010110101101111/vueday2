@@ -6,7 +6,8 @@
                 <el-menu
                 default-active="2"
                 class="el-menu-vertical-demo"
-                @open="handleOpen"
+                @open="handleOpen" 
+                v-bind:router="true"
                 @close="handleClose">
                     <el-submenu index="1">
                         <template slot="title">
@@ -15,7 +16,7 @@
                         </template>
                         <el-menu-item-group>
                             <template slot="title">vue背景介绍</template>
-                            <el-menu-item index="1-1">前端的未来</el-menu-item>
+                            <el-menu-item index="/future">前端的未来</el-menu-item>
                             <el-menu-item index="1-2">前端框架</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="环境准备">
@@ -74,10 +75,10 @@ export default {
   },
   methods: {
     handleOpen (key, keyPath) {
-      console.log(key, keyPath)
+    //   console.log(key, keyPath)
     },
     handleClose (key, keyPath) {
-      console.log(key, keyPath)
+    //   console.log(key, keyPath)
     }
   }
 }
