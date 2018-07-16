@@ -1,3 +1,5 @@
 <template>
-    <div>这是前端框架该要</div>
+    <div>
+        <h3>anjularjs</h3>
+    </div>
 </template>

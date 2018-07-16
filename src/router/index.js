@@ -8,8 +8,7 @@ import echarts from '@/echarts/echarts.vue'
 import element from '@/elementUi/index.vue'
 import future from '@/note/future.vue'
 import webFramwork from '@/note/webFramwork.vue'
-import in1 from '@/exam/in.vue'
-import in2 from '@/exam/in2.vue'
+import noteIndex from  '@/note/index.vue'
 
 Vue.use(Router)
 
@@ -56,9 +55,9 @@ export default new Router({
           component: webFramwork
         },
         {
-          path: '/in2',
-          name: 'in2',
-          component: in2
+          path: '',
+          name: 'noteIndex',
+          component: noteIndex
         }
       ]
     }

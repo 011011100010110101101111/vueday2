@@ -4,7 +4,7 @@
             <el-col :span="5">
                 <h3>vue听课笔记整理</h3>
                 <el-menu
-                default-active="2"
+                default-active="/"
                 class="el-menu-vertical-demo"
                 @open="handleOpen" 
                 v-bind:router="true"
