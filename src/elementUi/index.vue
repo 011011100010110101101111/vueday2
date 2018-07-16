@@ -17,7 +17,7 @@
                         <el-menu-item-group>
                             <template slot="title">vue背景介绍</template>
                             <el-menu-item index="/future">前端的未来</el-menu-item>
-                            <el-menu-item index="1-2">前端框架</el-menu-item>
+                            <el-menu-item index="/webFramwork">前端框架</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="环境准备">
                             <el-menu-item index="1-3">VUECli安装</el-menu-item>

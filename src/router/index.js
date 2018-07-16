@@ -7,6 +7,7 @@ import ajax from '@/ajax/ajax.vue'
 import echarts from '@/echarts/echarts.vue'
 import element from '@/elementUi/index.vue'
 import future from '@/note/future.vue'
+import webFramwork from '@/note/webFramwork.vue'
 import in1 from '@/exam/in.vue'
 import in2 from '@/exam/in2.vue'
 
@@ -50,9 +51,9 @@ export default new Router({
           component: future
         },
         {
-          path: '/in',
-          name: 'in',
-          component: in1
+          path: '/webFramwork',
+          name: 'webFramwork',
+          component: webFramwork
         },
         {
           path: '/in2',

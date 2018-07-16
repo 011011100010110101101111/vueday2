@@ -17,3 +17,10 @@ export default {
   }
 }
 </script>
+<style>
+p{
+  font-size: 10px;
+  color:  gray;
+}
+</style>
+
